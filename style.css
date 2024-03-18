@@ -1,0 +1,136 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+}
+
+header nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+header nav a:hover {
+  color: #ddd;
+}
+
+/* Contenido principal */
+
+main {
+  margin-top: 80px;
+}
+
+/* Secciones */
+
+section {
+  padding: 20px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+/* Sobre mí */
+
+#sobre-mi p {
+  text-align: justify;
+}
+
+/* Habilidades */
+
+#habilidades ul {
+  list-style: none;
+  padding: 0;
+}
+
+#habilidades ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Portafolio */
+
+#portafolio .proyectos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#portafolio .proyecto {
+  margin: 10px;
+  width: 300px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#portafolio .proyecto img {
+  width: 100%;
+}
+
+#portafolio .proyecto h3 {
+  margin-top: 0;
+}
+
+#portafolio .proyecto p {
+  text-align: justify;
+}
+
+#portafolio .proyecto a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Contacto */
+
+#contacto p {
+  text-align: justify;
+}
+
+#contacto ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contacto ul li {
+  margin-bottom: 10px;
+}
+
+#contacto ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+  /* Ajustes para dispositivos móviles */
+
+  header nav {
+    float: none;
+    text-align: center;
+  }
+
+  #portafolio .proyectos {
+    flex-direction: column;
+  }
+}
